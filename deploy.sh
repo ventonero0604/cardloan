@@ -21,6 +21,6 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git main
 
 # https://<USERNAME>.github.io/<REPO> にデプロイする場合
-git push -f git@github.com:ventonero0604/vite-vanilla.git main:gh-pages
+git push -f git@github.com:ventonero0604/cardloan.git main:gh-pages
 
 cd -
