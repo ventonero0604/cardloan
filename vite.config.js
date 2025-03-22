@@ -49,6 +49,7 @@ export default defineConfig({
         low: resolve(__dirname, root, 'low.html'),
         lowRate: resolve(__dirname, root, 'low-rate.html'),
         result: resolve(__dirname, root, 'result.html'),
+        privacy: resolve(__dirname, root, 'privacy.html'),
         sitemap: resolve(__dirname, root, 'sitemap.html')
       }
     }
