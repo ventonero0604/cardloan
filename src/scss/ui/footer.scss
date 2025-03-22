@@ -1,0 +1,23 @@
+.Footer {
+  background: #ebebeb;
+  padding: 20px;
+  display: grid;
+  gap: 16px;
+  text-align: center;
+
+  &_links {
+    display: inline-flex;
+    justify-content: center;
+  }
+
+  &_link {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    padding: 0 2px;
+  }
+
+  &_copy {
+    font-size: 10px;
+  }
+}

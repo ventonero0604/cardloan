@@ -1,0 +1,35 @@
+.Kv {
+  img {
+    width: 100%;
+  }
+
+  &_top {
+    &_movie {
+      position: relative;
+      aspect-ratio: 390 / 252;
+      overflow: hidden;
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 390 / 252;
+        background: center/cover no-repeat url(../../images/kv_top_movie_bg.png);
+        z-index: 1;
+      }
+      video {
+        object-fit: cover;
+        transform: translateX(49%);
+        position: absolute;
+        top: -2px;
+        left: 0;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

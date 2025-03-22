@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+{{> head}}
+
+<body>
+  <div class="Wrapper">
+    {{> header}}
+
+    <!-- 検索結果ページ -->
+    <main class="Result">
+      <section class="Result_header">
+        <div class="Result_info">
+          <div class="header">
+            <p class="header_text">
+              検索結果<em class="js-result-number">9</em>件
+            </p>
+            <button>
+              <img src="images/ico_reload.png" alt="">
+              条件を変更する
+            </button>
+          </div>
+          <div class="content">
+            <p class="title">
+              <img src="images/ico_para.png" alt="">
+              現在の設定条件
+            </p>
+            <ul class="list">
+              <li class="default">設定なし</li>
+              <li>収入証書不要</li>
+              <li>即日融資</li>
+            </ul>
+          </div>
+        </div>
+        <p class="Result_text">
+          条件に合ったカードローンを<em>オススメ順</em>で表示しています
+        </p>
+      </section>
+
+      <section class="Result_items">
+        <button>
+          <img src="images/ico_reload.png" alt="">
+          条件を変更する
+        </button>
+        <div class="content">
+          <aside class="Feature_contents">
+            <div class="Feature_contents_header">
+              <h3 class="Feature_contents_title">
+                アコムアコムアコムアコムアコムアコム
+              </h3>
+
+              <div class="Feature_contents_value">
+                <p class="title">申込実績</p>
+                <p class="value js-inview-value"><em>12,000</em>件</p>
+              </div>
+
+              <!-- <div class="Feature_contents_rating">
+                {{> stars}}
+                <p class="rate js-rate">3.4</p>
+              </div> -->
+            </div>
+
+            <div class="Feature_contents_body">
+              <ul class="Labels">
+                <li>
+                  バレにくい
+                </li>
+                <li>
+                  最短融資1h以内
+                </li>
+                <li>
+                  Webで完結
+                </li>
+                <li>
+                  スピード診断あり
+                </li>
+                <li>
+                  30日間金利0円
+                </li>
+                <li>
+                  土日祝OK
+                </li>
+              </ul>
+              <div class="Feature_contents_main">
+                <a href="#" class="thumb">
+                  <img src="images/thumb/every-card_acom_02.jpg" alt="">
+                </a>
+                <table>
+                  <tbody>
+                    <tr>
+                      <th>審査時間</th>
+                      <td>最短20分※</td>
+                    </tr>
+                    <tr>
+                      <th>融資時間</th>
+                      <td>最短20分※</td>
+                    </tr>
+                    <tr>
+                      <th>実質年率</th>
+                      <td>3.0% ~18.0%</td>
+                    </tr>
+                    <tr>
+                      <th>収入証明書</th>
+                      <td>50万円を超える場合は必要</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="CardDetail_point">
+                <p class="CardDetail_point_title">
+                  おすすめポイント
+                </p>
+                <ul class="CardDetail_point_list">
+                  <li class="CardDetail_point_list_item">
+                    初めての方は30日間金利手数料0円！
+                  </li>
+                  <li class="CardDetail_point_list_item">
+                    3秒で事前診断可能！※
+                  </li>
+                  <li class="CardDetail_point_list_item">
+                    24時間いつでも借入・返済が可能！
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="Feature_footer">
+              <div class="CountDownItem">
+                <div class="CountDownItem_content">
+                  <p class="CountDownItem_title"><b>本日中借入</b><br>の場合</p>
+                  <div class="CountDownItem_texts">
+                    <p class="CountDownItem_text">
+                      残り
+                      <img src="images/ico_time.svg" alt="">
+                    </p>
+                    <p class="CountDownItem_value">
+                      <span class="hour">0</span>時間<span class="minute">0</span>分<span class="second">0</span>秒
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="Button">
+                【公式】詳しくはこちら
+              </a>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="Result_form">
+        <div class="Result_form_content">
+          <div class="header">
+            <img src="images/ico_search.png" alt="">
+            最適なカードを探す
+          </div>
+          <form action="" method="post" id="form">
+
+            <div class="body">
+              <div class="select-wrap qs1">
+                <select name="work" id="" form="form_id2">
+                  <option hidden="" value="00">選択してください</option>
+                  <option value="01">正社員/公務員</option>
+                  <option value="02">派遣/契約社員</option>
+                  <option value="03">パート/アルバイト</option>
+                  <option value="04">自営業/フリーランス</option>
+                  <option value="05">学生</option>
+                  <option value="06">主婦</option>
+                  <option value="07">その他</option>
+                </select>
+              </div>
+
+              <div class="select-wrap qs2">
+                <select name="order_time" id="" form="form_id2">
+                  <option hidden="" value="00">選択してください</option>
+                  <option value="01">今日中に借りたい</option>
+                  <option value="02">2～3日以内</option>
+                  <option value="03">1週間以内</option>
+                </select>
+              </div>
+
+              <div class="select-wrap qs3">
+                <select name="order_amount" id="" form="form_id2">
+                  <option hidden="" value="00" selected="">選択してください</option>
+                  <option value="01">1～49万円</option>
+                  <option value="02">50～99万円</option>
+                  <option value="03">100～499万円</option>
+                  <option value="04">500万円以上</option>
+                </select>
+              </div>
+
+              <div class="select-wrap qs4">
+                <select name="order_how" id="" form="form_id2">
+                  <option hidden="" value="00" selected="">選択してください</option>
+                  <option value="01">口座振込</option>
+                  <option value="02">ATM</option>
+                  <option value="03">無人機</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="wrapper">
+              <input id="acd-check1" class="acd-check" type="checkbox" checked="true">
+              <label class="acd-label" for="acd-check1">詳細条件を追加</label>
+              <div class="acd-content">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td><input type="checkbox" name="option[]" value="01" form="form_id2" id="option01"><label
+                          for="option01">収入証明書不要</label><br></td>
+                      <td><input type="checkbox" name="option[]" value="02" form="form_id2" id="option02"><label
+                          for="option02">即日融資</label><br></td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" name="option[]" value="03" form="form_id2" id="option03"><label
+                          for="option03">スピード診断有り</label><br></td>
+                      <td><input type="checkbox" name="option[]" value="04" form="form_id2" id="option04"><label
+                          for="option04">Web完結</label><br></td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" name="option[]" value="05" form="form_id2" id="option05"><label
+                          for="option05">金利0円期間有り</label><br></td>
+                      <td><input type="checkbox" name="option[]" value="06" form="form_id2" id="option06"><label
+                          for="option06">書類送付なし</label><br></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <input type="submit" value="検索する" form="form_id2">
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      {{> faq}}
+      {{> categories}}
+    </main>
+    {{> attention}}
+    {{> footer}}
+  </div>
+  <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>

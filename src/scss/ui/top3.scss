@@ -1,0 +1,81 @@
+.Top3 {
+  position: relative;
+  background: #d72b2b;
+  &:after {
+    content: '';
+    display: block;
+    aspect-ratio: 317/300;
+    width: 60%;
+    background: url(../../images/bg_gradient.png) left top / contain no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  &_wrapper {
+    position: relative;
+    z-index: 2;
+    padding: 30px 20px;
+  }
+  &_title {
+    width: 320px;
+    margin-inline: auto;
+  }
+  &_info {
+    border-radius: 5px;
+    border: 2px solid #ffea05;
+    background: #ffea05;
+    overflow: hidden;
+    margin: 30px 0 20px;
+    &_title {
+      font-size: 14px;
+      font-weight: 700;
+      text-align: center;
+      height: 32px;
+      line-height: 32px;
+      em {
+        color: #f41313;
+      }
+    }
+    &_texts {
+      background: white;
+      padding: 10px 20px;
+      &_title {
+        background: #d72b2b;
+        color: white;
+        height: 32px;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        font-size: 15px;
+        font-weight: 700;
+        &:before,
+        &:after {
+          content: '';
+          display: block;
+          height: 2px;
+          background: white;
+          width: 100%;
+          flex: 1;
+        }
+      }
+      &_text {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 133%; /* 23.94px */
+        text-align: center;
+        margin-top: 8px;
+        em {
+          color: #f41313;
+          background: linear-gradient(transparent 50%, rgba(255, 234, 5, 0.4) 50%);
+        }
+      }
+    }
+  }
+  &_footer {
+    display: grid;
+    gap: 12px;
+    margin-top: 24px;
+  }
+}

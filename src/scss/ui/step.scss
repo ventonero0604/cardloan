@@ -1,0 +1,80 @@
+.Step {
+  background: #fff7e9;
+  padding: 20px 40px 30px;
+  display: grid;
+  place-items: center;
+  gap: 28px;
+
+  &_title {
+    width: 284px;
+  }
+
+  &_list {
+    display: grid;
+    gap: 36px;
+
+    &_badge {
+      width: 48px;
+      position: absolute;
+      top: -24px;
+      left: 13px;
+    }
+    &_item {
+      border-radius: 5px;
+      border: 1px solid #3f3f3f;
+      background: #fff;
+      padding: 30px 20px 20px 15px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      & + & {
+        &:before {
+          content: '';
+          display: block;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-right: 12px solid transparent;
+          border-left: 12px solid transparent;
+          border-top: 16px solid #d72b2b;
+          border-bottom: 0;
+          position: absolute;
+          top: -28px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+    &_image {
+      width: 62px;
+    }
+    &_texts {
+      display: grid;
+      gap: 10px;
+    }
+    &_title {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 100%;
+      color: #3f3f3f;
+      em {
+        color: #d72b2b;
+      }
+    }
+    &_text {
+      color: #000;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 166%; /* 19.92px */
+    }
+    &_content {
+      &_image {
+        width: 218px;
+        margin-inline: auto;
+      }
+    }
+  }
+}

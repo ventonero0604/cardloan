@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+{{> head}}
+
+<body>
+  <div class="Wrapper">
+    {{> header}}
+
+    <!-- 少額借入ページ -->
+    <main class="Low">
+      <section class="Kv">
+        <h2>
+          <img src="images/kv_low.png" alt="即日融資でバレない人気のカードローンを徹底比較">
+        </h2>
+      </section>
+
+      {{> countDown}}
+
+      {{> feature}}
+      {{> explain}}
+      {{> top3}}
+      {{> step}}
+      {{> pickup}}
+      {{> faq}}
+      {{> categories}}
+      <section class="Search">
+        {{> searchExpand}}
+      </section>
+
+    </main>
+    {{> attention}}
+    {{> footer}}
+  </div>
+  <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>

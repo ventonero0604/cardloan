@@ -1,0 +1,310 @@
+.CardDetail {
+  border-radius: 5px;
+  border: 1px solid #3f3f3f;
+  background: #fff;
+  padding: 16px 20px 30px;
+  position: relative;
+
+  & + & {
+    margin-top: 30px;
+  }
+
+  &_header {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    border-bottom: 2px solid #3f3f3f;
+    padding-left: 70px;
+    padding-bottom: 12px;
+    &:before {
+      content: '';
+      display: block;
+      width: 66px;
+      height: 60px;
+      position: absolute;
+      top: -16px;
+      left: 20px;
+    }
+  }
+
+  &.-gold,
+  &.-silver,
+  &.-bronze {
+    &:before,
+    &:after {
+      content: '';
+      display: block;
+      width: 45px;
+      height: 42px;
+      position: absolute;
+      bottom: -5px;
+    }
+    &:before {
+      left: -5px;
+    }
+    &:after {
+      right: -5px;
+    }
+  }
+
+  &.-gold {
+    &:before {
+      background: center/cover no-repeat url(../../images/top3_gold_bottom_left.png);
+    }
+    &:after {
+      background: center/cover no-repeat url(../../images/top3_gold_bottom_right.png);
+    }
+    .CardDetail_header {
+      &:before {
+        background: center/cover no-repeat url(../../images/top3_gold_rank.png);
+      }
+    }
+  }
+
+  &.-silver {
+    &:before {
+      background: center/cover no-repeat url(../../images/top3_silver_bottom_left.png);
+    }
+    &:after {
+      background: center/cover no-repeat url(../../images/top3_silver_bottom_right.png);
+    }
+    .CardDetail_header {
+      &:before {
+        background: center/cover no-repeat url(../../images/top3_silver_rank.png);
+      }
+    }
+  }
+
+  &.-bronze {
+    &:before {
+      background: center/cover no-repeat url(../../images/top3_bronze_bottom_left.png);
+    }
+    &:after {
+      background: center/cover no-repeat url(../../images/top3_bronze_bottom_right.png);
+    }
+    .CardDetail_header {
+      &:before {
+        background: center/cover no-repeat url(../../images/top3_bronze_rank.png);
+      }
+    }
+  }
+
+  &_body {
+    margin-top: 15px;
+    &_title {
+      color: #000;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 150%; /* 24px */
+      margin-top: 15px;
+    }
+  }
+
+  &_main {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    &_thumb {
+      width: 150px;
+    }
+    &_texts {
+      flex: 1;
+    }
+    &_table {
+      flex: 1;
+      margin-top: 5px;
+      th,
+      td {
+        border: 1px solid white;
+      }
+      th {
+        background: #fff7e9;
+        padding: 8px 5px;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%; /* 12px */
+        white-space: nowrap;
+        text-align: left;
+      }
+      td {
+        padding: 8px 10px;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 15px */
+      }
+    }
+  }
+
+  &_value {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    .title {
+      background: #d72b2b;
+      border-radius: 3px;
+      color: #fff;
+      text-align: center;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100%; /* 12px */
+      display: grid;
+      place-items: center;
+      padding: 6px 4px;
+    }
+    .value {
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 100%;
+      em {
+        color: #d72b2b;
+        font-size: 20px;
+      }
+    }
+  }
+
+  &_rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-block: 8px;
+    .rate {
+      font-size: 14px;
+      display: inline-flex;
+      font-weight: 700;
+      line-height: 100%; /* 14px */
+      &:before {
+        content: '(';
+      }
+      &:after {
+        content: ')';
+      }
+    }
+  }
+
+  &_tooltip {
+    background: var(--yellow);
+    padding: 7px 12px;
+    position: relative;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    text-align: center;
+    margin-top: 5px;
+    em {
+      color: #f41313;
+    }
+    &:after {
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-right: 5px solid transparent;
+      border-left: 5px solid transparent;
+      border-top: 10px solid var(--yellow);
+      border-bottom: 0;
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &_list {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    text-align: center;
+    &_title {
+      background: #fff7e9;
+      padding: 8px 5px;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100%; /* 12px */
+    }
+    &_text {
+      padding: 10px 0;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%; /* 15px */
+    }
+    &_icons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 0;
+      gap: 6px;
+      img {
+        width: 27px;
+      }
+    }
+  }
+
+  &_point {
+    border-radius: 3px;
+    border: 1px solid #3f3f3f;
+    background: #fff;
+    box-shadow: -4px 4px 0px 0px #d72b2b;
+    position: relative;
+    margin-top: 32px;
+    padding: 28px 20px 8px;
+    &_title {
+      border-radius: 5px;
+      border: 1px solid #3f3f3f;
+      background: #d72b2b;
+      position: relative;
+      color: #fff;
+      text-align: center;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100%; /* 16px */
+      padding: 8px 0;
+      width: 160px;
+      position: absolute;
+      top: -18px;
+      left: 50%;
+      transform: translateX(-50%);
+      &:before {
+        content: '';
+        display: block;
+        width: 26px;
+        height: 31px;
+        background: center/cover no-repeat url(../../images/ico_bulb.svg);
+        position: absolute;
+        top: -4px;
+        left: -14px;
+      }
+    }
+    &_list {
+      display: grid;
+      gap: 4px;
+      &_item {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 171%; /* 23.94px */
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: #3f3f3f;
+        &:before {
+          content: '';
+          display: block;
+          width: 16.089px;
+          height: 11px;
+          background: center/cover no-repeat url(../../images/ico_check_blue.svg);
+        }
+      }
+    }
+  }
+}

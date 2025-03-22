@@ -7,9 +7,32 @@
 
 /* component */
 @use './component/annotation.scss';
+@use './component/kv.scss';
+@use './component/wrapper.scss';
+@use './component/searchExpand.scss';
+@use './component/countDownItem.scss';
+@use './component/button.scss';
+@use './component/cardDetail.scss';
 
 /* ui */
 @use './ui/header.scss';
+@use './ui/navi.scss';
+@use './ui/countDown.scss';
+@use './ui/search.scss';
+@use './ui/feature.scss';
+@use './ui/explain.scss';
+@use './ui/labels.scss';
+@use './ui/top3.scss';
+@use './ui/step.scss';
+@use './ui/pickup.scss';
+@use './ui/faq.scss';
+@use './ui/categories.scss';
+@use './ui/attention.scss';
+@use './ui/tabTables.scss';
+@use './ui/footer.scss';
+
+/* page */
+@use './page/page.scss';
 
 /* tailwind */
 @tailwind base;

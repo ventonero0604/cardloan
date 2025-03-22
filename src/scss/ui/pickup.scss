@@ -1,0 +1,53 @@
+.Pickup {
+  position: relative;
+  background: #d72b2b;
+  overflow: hidden;
+  &:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-right: min(50vw, 375px) solid transparent;
+    border-left: min(50vw, 375px) solid transparent;
+    border-top: 37px solid #fff7e9;
+    border-bottom: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  &:after {
+    content: '';
+    display: block;
+    aspect-ratio: 317/300;
+    width: 45%;
+    background: url(../../images/bg_gradient.png) left top / contain no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  &_wrapper {
+    position: relative;
+    z-index: 2;
+    padding: 80px 20px 30px;
+    display: grid;
+    place-items: center;
+    gap: 30px;
+  }
+  &_title {
+    color: white;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 20px */
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+  }
+  &_footer {
+    display: grid;
+    gap: 12px;
+    margin-top: 24px;
+  }
+}

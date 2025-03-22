@@ -10,17 +10,13 @@ const pageData = {
   'index.html': {
     isHome: true,
     title: 'Main Page'
-  },
-  'hoge.html': {
-    isHome: false,
-    title: 'Hoge'
   }
 };
 
 const root = 'src';
 
 export default defineConfig({
-  base: "./",
+  base: './',
   server: {
     host: true //IPアドレスを有効化
   },
@@ -45,23 +41,29 @@ export default defineConfig({
         entryFileNames: 'assets/js/[name].js'
       },
       input: {
-        index: resolve(__dirname, 'index.html'),
-        hoge: resolve(__dirname, 'hoge.html')
+        index: resolve(__dirname, root, 'index.html'),
+        discreet: resolve(__dirname, root, 'discreet.html'),
+        worry: resolve(__dirname, root, 'worry.html'),
+        proof: resolve(__dirname, root, 'proof.html'),
+        instant: resolve(__dirname, root, 'instant.html'),
+        low: resolve(__dirname, root, 'low.html'),
+        lowRate: resolve(__dirname, root, 'low-rate.html'),
+        result: resolve(__dirname, root, 'result.html')
       }
     }
   },
   /*
     プラグインの設定を追加
   */
-    plugins: [
-      handlebars({
-        //コンポーネントの格納ディレクトリを指定
-        partialDirectory: resolve(__dirname, root, "components"),
-        //各ページ情報の読み込み
-        context(pagePath) {
-          const pageName = pagePath.split("/").pop();
-          return pageData[pageName];
-        },
-      }),
-    ],
+  plugins: [
+    handlebars({
+      //コンポーネントの格納ディレクトリを指定
+      partialDirectory: resolve(__dirname, root, 'components'),
+      //各ページ情報の読み込み
+      context(pagePath) {
+        const pageName = pagePath.split('/').pop();
+        return pageData[pageName];
+      }
+    })
+  ]
 });
