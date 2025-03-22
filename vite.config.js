@@ -48,7 +48,8 @@ export default defineConfig({
         instant: resolve(__dirname, root, 'instant.html'),
         low: resolve(__dirname, root, 'low.html'),
         lowRate: resolve(__dirname, root, 'low-rate.html'),
-        result: resolve(__dirname, root, 'result.html')
+        result: resolve(__dirname, root, 'result.html'),
+        sitemap: resolve(__dirname, root, 'sitemap.html')
       }
     }
   },
