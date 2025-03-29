@@ -14,7 +14,7 @@
   place-items: center;
   color: white;
   position: relative;
-  animation: float 1.5s ease-in-out infinite; /* アニメーションを追加 */
+  animation: btn_animation 1.8s infinite;
 
   &:after {
     content: '';
@@ -29,13 +29,25 @@
   }
 }
 
-/* 上下にふわふわ動くアニメーション */
-@keyframes float {
-  0%,
-  100% {
-    transform: translateY(0);
+@keyframes btn_animation {
+  0% {
+    box-shadow: 0px 3px 0px 0px #3f3f3f;
+    top: 0;
   }
-  50% {
-    transform: translateY(7px);
+  10% {
+    box-shadow: 0px 0 0px 0px #3f3f3f;
+    top: 3px;
+  }
+  20% {
+    box-shadow: 0px 3px 0px 0px #3f3f3f;
+    top: 0;
+  }
+  30% {
+    box-shadow: 0px 0 0px 0px #3f3f3f;
+    top: 3px;
+  }
+  40% {
+    box-shadow: 0px 3px 0px 0px #3f3f3f;
+    top: 0;
   }
 }

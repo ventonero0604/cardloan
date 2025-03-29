@@ -1,6 +1,4 @@
 import $ from 'jquery';
-// import Swiper from 'swiper';
-// import { Pagination } from 'swiper/modules';
 
 $(function () {
   /* 
@@ -248,7 +246,10 @@ $(function () {
 
         if (scrollTop + windowHeight > offsetTop && !$(this).hasClass('counted')) {
           $(this).addClass('counted');
-          countUp(element, 0, targetValue, 2000); // 2秒間でカウントアップ
+          countUp(element, 0, targetValue, 500); // 0.5秒間でカウントアップ
+          setTimeout(() => {
+            element.animate({ fontSize: '22px' }, 200).animate({ fontSize: '20px' }, 200); // カウントアップ後に文字サイズを20%大きくして元に戻す
+          }, 500); // countUpのdurationと同じ時間を待つ
         }
       });
     }
