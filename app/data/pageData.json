@@ -1,0 +1,58 @@
+{
+	"top": {
+		"rankingCardId": [3, 2, 1],
+		"rankingScoreValue": [],
+		"rankingBankCardId": [],
+		"rankingBankScoreValue": [],
+		"displayStar": false,
+		"displayTabTables": false
+	},
+	"discreet": {
+		"rankingCardId": [1, 2, 3],
+		"rankingScoreValue": [],
+		"rankingBankCardId": [],
+		"rankingBankScoreValue": [],
+		"displayStar": false,
+		"displayTabTables": false
+	},
+	"worry": {
+		"rankingCardId": [2, 6, 3],
+		"rankingScoreValue": [],
+		"rankingBankCardId": [],
+		"rankingBankScoreValue": [],
+		"displayStar": false,
+		"displayTabTables": false
+	},
+	"proof": {
+		"rankingCardId": [2, 6, 1],
+		"rankingScoreValue": [],
+		"rankingBankCardId": [],
+		"rankingBankScoreValue": [],
+		"displayStar": false,
+		"displayTabTables": false
+	},
+	"instant": {
+		"rankingCardId": [1, 2, 3],
+		"rankingScoreValue": [],
+		"rankingBankCardId": [],
+		"rankingBankScoreValue": [],
+		"displayStar": false,
+		"displayTabTables": false
+	},
+	"low": {
+		"rankingCardId": [1, 2, 3],
+		"rankingScoreValue": [],
+		"rankingBankCardId": [],
+		"rankingBankScoreValue": [],
+		"displayStar": false,
+		"displayTabTables": false
+	},
+	"lowRate": {
+		"rankingCardId": [1, 2, 3],
+		"rankingScoreValue": [],
+		"rankingBankCardId": [4, 8, 14],
+		"rankingBankScoreValue": [],
+		"displayStar": false,
+		"displayTabTables": false
+	}
+}

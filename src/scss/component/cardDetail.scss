@@ -15,7 +15,6 @@
     font-weight: 700;
     line-height: 120%;
     border-bottom: 2px solid #3f3f3f;
-    padding-left: 70px;
     padding-bottom: 12px;
     &:before {
       content: '';
@@ -31,6 +30,9 @@
   &.-gold,
   &.-silver,
   &.-bronze {
+    .CardDetail_header {
+      padding-left: 70px;
+    }
     &:before,
     &:after {
       content: '';
