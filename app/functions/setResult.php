@@ -1,27 +1,23 @@
 <?php
 
-/**********************************
-  カードランキングのデータを取得する
- **********************************/
-
-// ランキングデータの取得
+// データの取得
 if (!empty($topData['rankingCardName'])) {
   $ranking1stDataId = isset($topData['rankingCardName'][0]) ? $topData['rankingCardName'][0] : null;
   $ranking2ndDataId = isset($topData['rankingCardName'][1]) ? $topData['rankingCardName'][1] : null;
   $ranking3rdDataId = isset($topData['rankingCardName'][2]) ? $topData['rankingCardName'][2] : null;
 
   $ranking1stFiltered = array_filter($GLOBALS['cardData'], function ($card) use ($ranking1stDataId) {
-    return $card['serviceName'] === $ranking1stDataId;
+    return $card['id'] === $ranking1stDataId;
   });
   $GLOBALS['ranking1stData'] = reset($ranking1stFiltered);
 
   $ranking2ndFiltered = array_filter($GLOBALS['cardData'], function ($card) use ($ranking2ndDataId) {
-    return $card['serviceName'] === $ranking2ndDataId;
+    return $card['id'] === $ranking2ndDataId;
   });
   $GLOBALS['ranking2ndData'] = reset($ranking2ndFiltered);
 
   $ranking3rdFiltered = array_filter($GLOBALS['cardData'], function ($card) use ($ranking3rdDataId) {
-    return $card['serviceName'] === $ranking3rdDataId;
+    return $card['id'] === $ranking3rdDataId;
   });
   $GLOBALS['ranking3rdData'] = reset($ranking3rdFiltered);
 } else {
@@ -40,10 +36,6 @@ $GLOBALS['ranking2ndScore'] = isset($rankingScoreValues[1]) ? $rankingScoreValue
 $GLOBALS['ranking3rdScore'] = isset($rankingScoreValues[2]) ? $rankingScoreValues[2] : 0;
 
 
-/**********************************
-  銀行ランキングのデータを取得する
- **********************************/
-
 // 銀行ランキングデータの取得
 if (!empty($topData['rankingBankCardName'])) {
   $bankRanking1stDataId = isset($topData['rankingBankCardName'][0]) ? $topData['rankingBankCardName'][0] : null;
@@ -51,17 +43,17 @@ if (!empty($topData['rankingBankCardName'])) {
   $bankRanking3rdDataId = isset($topData['rankingBankCardName'][2]) ? $topData['rankingBankCardName'][2] : null;
 
   $bankRanking1stFiltered = array_filter($GLOBALS['cardData'], function ($card) use ($bankRanking1stDataId) {
-    return $card['serviceName'] === $bankRanking1stDataId;
+    return $card['id'] === $bankRanking1stDataId;
   });
   $GLOBALS['bankRanking1stData'] = reset($bankRanking1stFiltered);
 
   $bankRanking2ndFiltered = array_filter($GLOBALS['cardData'], function ($card) use ($bankRanking2ndDataId) {
-    return $card['serviceName'] === $bankRanking2ndDataId;
+    return $card['id'] === $bankRanking2ndDataId;
   });
   $GLOBALS['bankRanking2ndData'] = reset($bankRanking2ndFiltered);
 
   $bankRanking3rdFiltered = array_filter($GLOBALS['cardData'], function ($card) use ($bankRanking3rdDataId) {
-    return $card['serviceName'] === $bankRanking3rdDataId;
+    return $card['id'] === $bankRanking3rdDataId;
   });
   $GLOBALS['bankRanking3rdData'] = reset($bankRanking3rdFiltered);
 } else {
@@ -76,19 +68,10 @@ $GLOBALS['bankRanking1stScore'] = isset($bankRankingScoreValues[0]) ? $bankRanki
 $GLOBALS['bankRanking2ndScore'] = isset($bankRankingScoreValues[1]) ? $bankRankingScoreValues[1] : 0;
 $GLOBALS['bankRanking3rdScore'] = isset($bankRankingScoreValues[2]) ? $bankRankingScoreValues[2] : 0;
 
-
-/**********************************
-  タブUIとの表示切り替えフラグを取得する
- **********************************/
-
 // 特集orタブテーブルの表示フラグ値を設定
 $GLOBALS['displayTabTables'] = isset($topData['displayTabTables']) ? $topData['displayTabTables'] : false;
 
-
-/**********************************
-  検索結果データを取得する
- **********************************/
-
+// ランキングスコアデータの取得
 
 
 // 0~3の引数を受け取って、それに応じたアイコンを返す

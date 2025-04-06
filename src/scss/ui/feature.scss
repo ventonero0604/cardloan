@@ -15,6 +15,9 @@
     border: 1px solid #3f3f3f;
     background: #fff;
     padding: 20px;
+    & + & {
+      margin-top: 40px;
+    }
     &_header {
       display: flex;
       align-items: center;

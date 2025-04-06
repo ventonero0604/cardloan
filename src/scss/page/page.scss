@@ -300,7 +300,7 @@
         font-weight: 700;
       }
     }
-    button {
+    .link {
       border-radius: 19px;
       border: 1px solid #3f3f3f;
       background: #fff;
@@ -377,7 +377,9 @@
     gap: 20px;
     background: #d72b2b;
     padding: 20px;
-    button {
+    .select {
+      appearance: none; /* 標準のスタイルを無効にする */
+      cursor: pointer;
       border-radius: 19px;
       border: 1px solid #3f3f3f;
       background: #fff;
@@ -387,7 +389,7 @@
       font-style: normal;
       font-weight: 700;
       line-height: normal;
-      padding: 4px 10px;
+      padding: 6px 10px;
       display: flex;
       align-items: center;
       gap: 6px;
@@ -396,6 +398,12 @@
       img {
         width: 10px;
       }
+    }
+    .CountDown {
+      padding-top: 0;
+    }
+    .Feature_footer {
+      gap: 0;
     }
   }
   &_form {
@@ -483,7 +491,7 @@
       width: 100%;
     }
 
-    input[type='submit'] {
+    .submit {
       width: 50%;
       height: 60px;
       margin: 20px auto 0px;

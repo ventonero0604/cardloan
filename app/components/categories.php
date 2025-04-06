@@ -4,7 +4,7 @@
   </h3>
   <ul class="Categories_list">
     <li class="Categories_list_item">
-      <a href="#" class="Categories_list_link">
+      <a href="proof.php" class="Categories_list_link">
         <figure class="Categories_list_image">
           <img src="images/categories_ico_1.png" alt="">
         </figure>
@@ -12,7 +12,7 @@
       </a>
     </li>
     <li class="Categories_list_item">
-      <a href="#" class="Categories_list_link">
+      <a href="instant.php" class="Categories_list_link">
         <figure class="Categories_list_image">
           <img src="images/categories_ico_2.png" alt="">
         </figure>
@@ -20,7 +20,7 @@
       </a>
     </li>
     <li class="Categories_list_item">
-      <a href="#" class="Categories_list_link">
+      <a href="worry.php" class="Categories_list_link">
         <figure class="Categories_list_image">
           <img src="images/categories_ico_3.png" alt="">
         </figure>
@@ -28,7 +28,7 @@
       </a>
     </li>
     <li class="Categories_list_item">
-      <a href="#" class="Categories_list_link">
+      <a href="discreet.php" class="Categories_list_link">
         <figure class="Categories_list_image">
           <img src="images/categories_ico_4.png" alt="">
         </figure>
@@ -36,7 +36,7 @@
       </a>
     </li>
     <li class="Categories_list_item">
-      <a href="#" class="Categories_list_link">
+      <a href="low-rate.php" class="Categories_list_link">
         <figure class="Categories_list_image">
           <img src="images/categories_ico_5.png" alt="">
         </figure>
@@ -44,7 +44,7 @@
       </a>
     </li>
     <li class="Categories_list_item">
-      <a href="#" class="Categories_list_link">
+      <a href="low.php" class="Categories_list_link">
         <figure class="Categories_list_image">
           <img src="images/categories_ico_6.png" alt="">
         </figure>

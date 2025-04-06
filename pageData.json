@@ -1,22 +1,22 @@
 {
 	"top": {
-			"rankingCardId": [3, 2, 1],
+			"rankingCardName": [3, 2, 1],
 			"rankingScoreValue": [],
-			"rankingBankCardId": [],
+			"rankingBankCardName": [],
 			"rankingBankScoreValue": [],
 			"displayStar": false
 	},
 	"lowRate": {
-			"rankingCardId": [2, 4, 5],
+			"rankingCardName": [2, 4, 5],
 			"rankingScoreValue": [],
-			"rankingBankCardId": [10, 11, 12],
+			"rankingBankCardName": [10, 11, 12],
 			"rankingBankScoreValue": [],
 			"displayStar": false
 	},
 	"worry": {
-			"rankingCardId": [2, 4, 5],
+			"rankingCardName": [2, 4, 5],
 			"rankingScoreValue": [4.2, 3.8, 3.2],
-			"rankingBankCardId": [],
+			"rankingBankCardName": [],
 			"rankingBankScoreValue": [],
 			"displayStar": true
 	}

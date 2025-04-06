@@ -15,10 +15,10 @@
             <p class="header_text">
               検索結果<em class="js-result-number">9</em>件
             </p>
-            <button>
+            <a href="#" class="link">
               <img src="images/ico_reload.png" alt="">
               条件を変更する
-            </button>
+            </a>
           </div>
           <div class="content">
             <p class="title">
@@ -38,10 +38,13 @@
       </section>
 
       <section class="Result_items">
-        <button>
-          <img src="images/ico_reload.png" alt="">
-          条件を変更する
-        </button>
+        <select id="select" name="select" form="select_form" class="select">
+          <option value="def" selected>---並べ替え---</option>
+          <option value="dec-users">直近利用者数が多い</option>
+          <option value="asc-examtime">審査時間が早い</option>
+          <option value="asc-rate">実質年率が低い</option>
+          <option value="dec-limitamount">借入限度額が多い</option>
+        </select>
         <div class="content">
           <aside class="Feature_contents">
             <div class="Feature_contents_header">
@@ -228,7 +231,8 @@
 
             <div class="row">
               <div class="col-md-12">
-                <input type="submit" value="検索する" form="form_id2">
+                <button class="submit" type="button"
+                  onclick="document.getElementById('resultForm').submit();">検索する</button>
               </div>
             </div>
           </form>

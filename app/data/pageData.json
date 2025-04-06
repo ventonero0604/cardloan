@@ -1,56 +1,56 @@
 {
 	"top": {
-		"rankingCardId": [3, 2, 1],
+		"rankingCardName": ["アイフル", "プロミス", "アコム"],
 		"rankingScoreValue": [],
-		"rankingBankCardId": [],
+		"rankingBankCardName": [],
 		"rankingBankScoreValue": [],
 		"displayStar": false,
 		"displayTabTables": false
 	},
 	"discreet": {
-		"rankingCardId": [1, 2, 3],
+		"rankingCardName": ["アコム", "プロミス", "アイフル"],
 		"rankingScoreValue": [],
-		"rankingBankCardId": [],
+		"rankingBankCardName": [],
 		"rankingBankScoreValue": [],
 		"displayStar": false,
 		"displayTabTables": false
 	},
 	"worry": {
-		"rankingCardId": [2, 6, 3],
+		"rankingCardName": ["プロミス", "SMBCモビット", "アイフル"],
 		"rankingScoreValue": [],
-		"rankingBankCardId": [],
+		"rankingBankCardName": [],
 		"rankingBankScoreValue": [],
 		"displayStar": false,
 		"displayTabTables": false
 	},
 	"proof": {
-		"rankingCardId": [2, 6, 1],
+		"rankingCardName": ["プロミス", "SMBCモビット", "アコム"],
 		"rankingScoreValue": [],
-		"rankingBankCardId": [],
+		"rankingBankCardName": [],
 		"rankingBankScoreValue": [],
 		"displayStar": false,
 		"displayTabTables": false
 	},
 	"instant": {
-		"rankingCardId": [1, 2, 3],
+		"rankingCardName": ["アコム", "プロミス", "アイフル"],
 		"rankingScoreValue": [],
-		"rankingBankCardId": [],
+		"rankingBankCardName": [],
 		"rankingBankScoreValue": [],
 		"displayStar": false,
 		"displayTabTables": false
 	},
 	"low": {
-		"rankingCardId": [1, 2, 3],
+		"rankingCardName": ["アコム", "プロミス", "アイフル"],
 		"rankingScoreValue": [],
-		"rankingBankCardId": [],
+		"rankingBankCardName": [],
 		"rankingBankScoreValue": [],
 		"displayStar": false,
 		"displayTabTables": false
 	},
 	"lowRate": {
-		"rankingCardId": [1, 2, 3],
+		"rankingCardName": ["アコム", "プロミス", "アイフル"],
 		"rankingScoreValue": [],
-		"rankingBankCardId": [4, 8, 14],
+		"rankingBankCardName": ["三井住友銀行カードローン", "住信SBIネット銀行カードローン", "Fマネーカード"],
 		"rankingBankScoreValue": [],
 		"displayStar": false,
 		"displayTabTables": false
