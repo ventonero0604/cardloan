@@ -91,9 +91,11 @@
                   </p>
                 </div>
               <?php endif; ?>
-              <p class="CardDetail_tooltip">
-                <em>本日</em>借り入れも◎
-              </p>
+              <?php if ($ranking['data']['flagToday']): ?>
+                <p class="CardDetail_tooltip">
+                  <em>本日</em>借り入れも◎
+                </p>
+              <?php endif; ?>
               <table class="CardDetail_main_table">
                 <tbody>
                   <tr>

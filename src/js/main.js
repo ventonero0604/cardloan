@@ -11,7 +11,7 @@ $(function () {
     document.body.classList.toggle('is-fixed');
   });
 
-  if ($('.CountDown').length) {
+  if ($('.CountDownItem').length) {
     function updateCountdown() {
       var now = new Date();
       var target = new Date();
@@ -25,6 +25,10 @@ $(function () {
 
       if (diff <= 0) {
         $('.CountDown').hide(); // 残り時間が0になったら非表示
+        // 本日借り入れも◎の吹き出しも非表示
+        if ($('.CardDetail_tooltip').length) {
+          $('.CardDetail_tooltip').hide();
+        }
       } else {
         var hours = Math.floor(diff / (1000 * 60 * 60));
         var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));

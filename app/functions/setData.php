@@ -107,3 +107,14 @@ function getIconByType($type)
       return '<img src="images/ico_compare_line.svg" alt="">';
   }
 }
+
+// データを受け取って、それに応じたnoteAllの値を返す
+
+function getNoteAll($data)
+{
+  if (isset($data['noteAll'])) {
+    return htmlspecialchars(nl2br($data['noteAll']), ENT_QUOTES, 'UTF-8');
+  } else {
+    return '';
+  }
+}

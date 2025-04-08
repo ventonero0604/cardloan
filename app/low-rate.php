@@ -387,9 +387,11 @@ require './components/head.php';
                             </p>
                           </div>
                         <?php endif; ?>
-                        <p class="CardDetail_tooltip">
-                          <em>本日</em>借り入れも◎
-                        </p>
+                        <?php if ($ranking['data']['flagToday']): ?>
+                          <p class="CardDetail_tooltip">
+                            <em>本日</em>借り入れも◎
+                          </p>
+                        <?php endif; ?>
                         <table class="CardDetail_main_table">
                           <tbody>
                             <tr>
@@ -519,24 +521,12 @@ require './components/head.php';
                   </div>
                   <div class="CardDetail_body">
                     <ul class="Labels">
-                      <?php if ($ranking['data']['flagSecret']): ?>
-                        <li>バレにくい</li>
-                      <?php endif; ?>
-                      <?php if ($ranking['data']['flagToday']): ?>
-                        <li>最短融資1h以内</li>
-                      <?php endif; ?>
-                      <?php if ($ranking['data']['flagOnline']): ?>
-                        <li>Webで完結</li>
-                      <?php endif; ?>
-                      <?php if ($ranking['data']['flagExamSpeed']): ?>
-                        <li>スピード診断あり</li>
-                      <?php endif; ?>
-                      <?php if ($ranking['data']['flag30dayFree']): ?>
-                        <li>30日間金利0円</li>
-                      <?php endif; ?>
-                      <?php if ($ranking['data']['flag365day']): ?>
-                        <li>土日祝OK</li>
-                      <?php endif; ?>
+                      <li class="<?php echo $ranking['data']['flagSecret'] ? '' : 'disabled'; ?>">バレにくい</li>
+                      <li class="<?php echo $ranking['data']['flagToday'] ? '' : 'disabled'; ?>">最短融資1h以内</li>
+                      <li class="<?php echo $ranking['data']['flagOnline'] ? '' : 'disabled'; ?>">Webで完結</li>
+                      <li class="<?php echo $ranking['data']['flagExamSpeed'] ? '' : 'disabled'; ?>">スピード診断あり</li>
+                      <li class="<?php echo $ranking['data']['flag30dayFree'] ? '' : 'disabled'; ?>">30日間金利0円</li>
+                      <li class="<?php echo $ranking['data']['flag365day'] ? '' : 'disabled'; ?>">土日祝OK</li>
                     </ul>
                     <h4 class="CardDetail_body_title">
                       <?php echo $ranking['data']['mainCopy']; ?>
@@ -575,9 +565,11 @@ require './components/head.php';
                             </p>
                           </div>
                         <?php endif; ?>
-                        <p class="CardDetail_tooltip">
-                          <em>本日</em>借り入れも◎
-                        </p>
+                        <?php if ($ranking['data']['flagToday']): ?>
+                          <p class="CardDetail_tooltip">
+                            <em>本日</em>借り入れも◎
+                          </p>
+                        <?php endif; ?>
                         <table class="CardDetail_main_table">
                           <tbody>
                             <tr>

@@ -14,5 +14,9 @@
     display: grid;
     place-items: center;
     padding: 6px 0;
+    &.disabled {
+      opacity: 0.8;
+      background-color: #b9b9b9;
+    }
   }
 }
