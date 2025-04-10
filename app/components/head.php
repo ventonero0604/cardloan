@@ -15,10 +15,10 @@
   <link rel="icon" type="image/png" href="./images/icon-192x192.png">
   <script type="module" crossorigin src="./assets/js/main.js"></script>
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/override.css">
 
   <!-- Google Tag Manager -->
   <script>
-    
     (function(w, d, s, l, i) {
       w[l] = w[l] || [];
       w[l].push({
