@@ -216,10 +216,13 @@ $(function () {
       parentTabTables.find(`.TabTable[data-table="${index}"]`).fadeIn();
     });
 
-    // 初期状態で最初のテーブルをfadeInで表示
+    // 初期状態でis-activeクラスが付いているタブのテーブルを表示
     $('.TabTables').each(function () {
+      const activeTab = $(this).find('.TabTables_tab.is-active');
+      const activeIndex = activeTab.length ? activeTab.index() : 0;
+
       $(this).find('.TabTable').hide();
-      $(this).find('.TabTable[data-table="0"]').fadeIn();
+      $(this).find(`.TabTable[data-table="${activeIndex}"]`).fadeIn();
     });
   }
 
