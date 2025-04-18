@@ -306,6 +306,9 @@
           height: 11px;
           background: center/cover no-repeat url(../../images/ico_check_blue.svg);
         }
+        &_text {
+          display: inline;
+        }
       }
     }
   }

@@ -247,16 +247,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </p>
                     <ul class="CardDetail_point_list">
                       <li class="CardDetail_point_list_item">
-                        <?php echo $result['point1']; ?>
+                        <p class="CardDetail_point_list_item_text">
+                          <?php echo $result['point1']; ?>
+                        </p>
                       </li>
                       <?php if (!empty($result['point2'])): ?>
                         <li class="CardDetail_point_list_item">
-                          <?php echo $result['point2']; ?>
+                          <p class="CardDetail_point_list_item_text">
+                            <?php echo $result['point2']; ?>
+                          </p>
                         </li>
                       <?php endif; ?>
                       <?php if (!empty($result['point3'])): ?>
                         <li class="CardDetail_point_list_item">
-                          <?php echo $result['point3']; ?>
+                          <p class="CardDetail_point_list_item_text">
+                            <?php echo $result['point3']; ?>
+                          </p>
                         </li>
                       <?php endif; ?>
                     </ul>

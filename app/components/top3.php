@@ -164,13 +164,19 @@
             </p>
             <ul class="CardDetail_point_list">
               <li class="CardDetail_point_list_item">
-                <?php echo $ranking['data']['point1']; ?>
+                <p class="CardDetail_point_list_item_text">
+                  <?php echo $ranking['data']['point1']; ?>
+                </p>
               </li>
               <li class="CardDetail_point_list_item">
-                <?php echo $ranking['data']['point2']; ?>
+                <p class="CardDetail_point_list_item_text">
+                  <?php echo $ranking['data']['point2']; ?>
+                </p>
               </li>
               <li class="CardDetail_point_list_item">
-                <?php echo $ranking['data']['point3']; ?>
+                <p class="CardDetail_point_list_item_text">
+                  <?php echo $ranking['data']['point3']; ?>
+                </p>
               </li>
             </ul>
           </div>
